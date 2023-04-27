@@ -1,0 +1,30 @@
+<h1>Log In</h1>
+
+<div class="login-container">
+        <div class="login">
+
+            <form class="row g-3 needs-validation" action="/logIn/data" method="post">
+
+                <span id="errorDisplay" style="color: red"> {{error}} </span>
+                <img id = "icon" src='../public/static/images/user.svg' alt="user icon">
+
+                <div class="col-md-12">
+                    <label for="email" class="email">Email</label>
+                    <input type="email" class="form-control" id="email" name='email'>
+                </div>
+
+                <div class="col-md-12">
+                    <label for="pass" class="pass">Password</label>
+                    <input type="password" id="pass" name="pass" class="form-control" placeholder="Must be atleast 8 characters" aria-label="Password">
+                </div> 
+
+                <span>New User <a href="/signUp">Sign Up</a></span>
+
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-outline-info">Log In</button>
+                </div>
+
+            </form>
+
+        </div>
+</div>
